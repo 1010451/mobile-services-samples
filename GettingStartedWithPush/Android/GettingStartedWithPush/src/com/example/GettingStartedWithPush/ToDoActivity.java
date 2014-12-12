@@ -14,8 +14,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 
 //import com.example.GettingStartedWithPush.R;
-import com.google.common.util.concurrent.FutureCallback;
-import com.google.common.util.concurrent.Futures;
+
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.SettableFuture;
 import com.microsoft.windowsazure.mobileservices.MobileServiceClient;
@@ -27,7 +26,6 @@ import com.microsoft.windowsazure.mobileservices.http.ServiceFilterResponse;
 import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 
 import com.microsoft.windowsazure.notifications.NotificationsManager;
-import com.microsoft.windowsazure.mobileservices.notifications.Registration;
 
 public class ToDoActivity extends Activity {
 
@@ -76,7 +74,7 @@ public class ToDoActivity extends Activity {
 			// Mobile Service URL and key
 			mClient = new MobileServiceClient(
 					"MobileServiceUrl",
-					"AppKey", 
+					"AppKey",
 					this).withFilter(new ProgressFilter());
 
 			NotificationsManager.handleNotifications(this, SENDER_ID, MyHandler.class);
@@ -120,28 +118,7 @@ public class ToDoActivity extends Activity {
 		return true;
 	}
 
-	/**
-	 * Registers mobile services client to receive GCM push notifications
-	 * @param gcmRegistrationId The Google Cloud Messaging session Id returned 
-	 * by the call to GoogleCloudMessaging.register in NotificationsManager.handleNotifications
-	 */
-	public void registerForPush(String gcmRegistrationId)
-	{
-	    String [] tags = {null};
-	    ListenableFuture<Registration> reg = mClient.getPush().register(gcmRegistrationId, tags);
 
-	    Futures.addCallback(reg, new FutureCallback<Registration>() {
-	        @Override
-	        public void onFailure(Throwable exc) {
-	            createAndShowDialog((Exception) exc, "Error");
-	        }
-
-	        @Override
-	        public void onSuccess(Registration reg) {
-	            createAndShowDialog(reg.getRegistrationId() + " resistered", "Registration");
-	        }
-	    });
-	}
 	
 	/**
 	 * Mark an item as completed
