@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/mobileservices-2.0.1-beta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/guava-17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/mobileservices-2.0.1-beta-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/mobileservices-2.0.1-beta-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/notifications-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/notifications-1.0.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/GettingStartedWithPush/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
