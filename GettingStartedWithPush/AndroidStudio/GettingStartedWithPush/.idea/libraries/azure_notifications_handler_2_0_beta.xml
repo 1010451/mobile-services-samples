@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="azure-notifications-handler-2.0-beta">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/azure-notifications-handler/2.0-beta/f6d392f76204eedc1eabfe15e5e51caec1372123/azure-notifications-handler-2.0-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/azure-notifications-handler/2.0-beta/b4ed6c1b34a420233494aba4c3fc48d2adef3e9c/azure-notifications-handler-2.0-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
