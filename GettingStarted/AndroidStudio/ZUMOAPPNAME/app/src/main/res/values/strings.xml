@@ -3,6 +3,16 @@
     <string name="app_name">ZUMOAPPNAME</string>
     <string name="add_textbox_hint">Add a ToDo item</string>
     <string name="add_button_text">Add</string>
+    <string name="addUntyped_button_text">Add Untyped</string>
+    <string name="showAll_button_text">Show All</string>
+    <string name="showAllUntyped_button_text">Show All Json</string>
+    <string name="filter_button_text">Filter</string>
+    <string name="sort_button_text">Sort</string>
+    <string name="top5_button_text">Top 5</string>
+    <string name="SelectCols_button_text">Columns</string>
+    <string name="concat_button_text">Concat</string>
+    <string name="deleteItem_button_text">Delete Item</string>
+    <string name="lookup_button_text">Lookup Item</string>
     <string name="mobile_services">Mobile Services</string>
     <string name="menu_refresh">Refresh</string>
     <string name="checkbox_text">Item Text</string>

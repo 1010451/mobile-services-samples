@@ -1,4 +1,4 @@
-package com.example.zumoappname;
+package com.example.clientLibrary;
 
 /**
  * Represents an item in a ToDo list

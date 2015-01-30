@@ -1,4 +1,4 @@
-package com.example.zumoappname;
+package com.example.clientLibrary;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.EditText;
+
+import com.example.zumoappname.R;
+
+import org.w3c.dom.Text;
 
 /**
  * Adapter to bind a ToDoItem List to a view
@@ -49,6 +54,9 @@ public class ToDoItemAdapter extends ArrayAdapter<ToDoItem> {
 		checkBox.setText(currentItem.getText());
 		checkBox.setChecked(false);
 		checkBox.setEnabled(true);
+
+        final EditText text = (EditText) row.findViewById(R.id.editText);
+        text.setText(currentItem.getId());
 
 		checkBox.setOnClickListener(new View.OnClickListener() {
 

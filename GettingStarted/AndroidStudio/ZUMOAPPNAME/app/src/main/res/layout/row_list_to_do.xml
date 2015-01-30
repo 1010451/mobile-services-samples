@@ -6,8 +6,13 @@
     
     <CheckBox
         android:id="@+id/checkToDoItem"
-        android:layout_width="wrap_content"
+        android:layout_width="128dip"
         android:layout_height="wrap_content"
         android:text="@string/checkbox_text" />
+    <EditText
+        android:layout_width="128dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
 
-</LinearLayout>
+ </LinearLayout>
+
