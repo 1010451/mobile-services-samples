@@ -71,8 +71,8 @@ public class ToDoActivity extends Activity {
 			// Create the Mobile Service Client instance, using the provided
 			// Mobile Service URL and key
 			mClient = new MobileServiceClient(
-					"MobileServiceUrl",
-					"AppKey",
+                    "MobileServiceUrl",
+                    "AppKey",
 					this).withFilter(new ProgressFilter());
 
             NotificationsManager.handleNotifications(this, SENDER_ID, MyHandler.class);
